@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS + CSS Clock</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
@@ -88,6 +89,7 @@
         background: black;
         position: absolute;
         top: 50%;
+        border-radius: 3px;
         transform-origin: 100%;
         transform: rotate(90deg);
         transition: all 0.2s;
@@ -104,6 +106,13 @@
         height: 2px;
       }
 
+      @media screen and (max-width:500px){
+        .clock {
+          width: 15rem;
+          height: 15rem;
+        }
+        
+      }
     </style>
 
     <script>
